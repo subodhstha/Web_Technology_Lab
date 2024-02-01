@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student form</title>
+</head>
+<body>
+    <form method="post" action="insert.php" onsubmit="return validateForm()">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="firstname"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lastname"><br>
+        <label>Gender:</label><br>
+        <input type="radio" id="female" value="1" name="gender"> Female<br>
+        <input type="radio" id="male" value="0" name="gender"> Male<br>
+        <label for="semester">Semester:</label><br>
+        <select name="semester" id="semester">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select><br>
+        <label for="symbol">Symbol No:</label><br>
+        <input type="text" id="symbol" name="symbol"><br>
+        <label for="batch">Batch:</label><br>   
+        <select name="batch" id="batch">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+    <a href="list.php"><h3>Database</h3></a>
+    <script src="home.js"></script>
+</body>
+</html>
